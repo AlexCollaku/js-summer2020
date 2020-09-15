@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2. Write Fahrenheit to Celsius converter function.
+// - Call the function `fahrenheitToCelsius`
+// - Function should take one parameter (tempF)
+// - Function should log in the console: "NN°F is NN°C." where NN should
+// be replaced with respective F and C temperature numbers
+// - Return temperature in Celsius
+// Reference:
+// https://www.mathsisfun.com/temperature-conversion.html
+// Save your function as HTML file (exercise2.html).
+
+// °F to °C:   Subtract 32, then multiply by 5, then divide by 9
+
+let fahrenheitToCelsius = (tempF) => {
+    const tempC = (tempF - 32) * 5 / 9;
+    
+    console.log(`${tempF}°F is ${tempC}°C.`)
+}
+
+fahrenheitToCelsius(98.6);
+fahrenheitToCelsius(100);
+    </script>
+</body>
+</html>

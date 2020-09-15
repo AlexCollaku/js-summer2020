@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 3. Write a function that calculates students grade and percent of total possible score.
+// - Function should take two parameters, score and total possible score
+// - Function should return result string, i.e. for 15/20 it should return: "You got a C (75%)!"
+// - Following % ranges should be used for calculating grade letter: A 90-100, B 80-89, C 70-79, D 60-69, F 0-59
+// - Invoke the function with some arguments and log result in the console
+// Save your function as HTML file (exercise3.html).
+
+
+let studentGradeAndPercentageScore = (score, totalPossibleScore) => {
+    
+    const percentageScore = (score / totalPossibleScore) * 100;
+
+    if (90 <= score && score <= 100) {
+
+        console.log(`You got a A (${percentageScore}%)`)
+    
+    } else if (80 <= score && score <= 89) {
+
+        console.log(`You got a B (${percentageScore}%)`)
+        
+    } else if (70 <= score && score <= 79) {
+
+        console.log(`You got a C (${percentageScore}%)`)
+
+    } else if (60 <= score && score <= 69) {
+
+        console.log(`You got a D (${percentageScore}%)`)
+
+    } else if (0 <= score && score <= 59) {
+
+        console.log(`You got a C (${percentageScore}%)`)
+    }
+}
+
+studentGradeAndPercentageScore(100, 100);
+studentGradeAndPercentageScore(88, 100);
+studentGradeAndPercentageScore(73, 100);
+studentGradeAndPercentageScore(66, 100);
+studentGradeAndPercentageScore(50, 100);
+    </script>
+</body>
+</html>
